@@ -1,0 +1,15 @@
+{
+	"predef": [
+		"Backbone",
+		"$",
+		"_",
+		"Handlebars"
+	],
+	"undef":true,
+    "evil": true,
+    "regexdash": true,
+    "browser": false,
+    "wsh": true,
+    "trailing": true,
+    "sub": true
+}

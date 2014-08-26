@@ -1,0 +1,15 @@
+{
+	"predef": [
+		"describe",
+		"beforeEach",
+		"it",
+		"expect"
+	],
+	"undef":true,
+    "evil": true,
+    "regexdash": true,
+    "browser": false,
+    "wsh": true,
+    "trailing": true,
+    "sub": true
+}

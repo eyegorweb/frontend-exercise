@@ -1,0 +1,24 @@
+{
+  "name": "upmysport-frontend-exercise",
+  "version": "0.0.0",
+  "description": "An exercise to help determine a front-end developer's abilities and expertise. There are no right answers :)",
+  "main": " ",
+  "scripts": {
+    "test": " "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/upmysport/upmysport-frontend-exercise.git"
+  },
+  "author": "Daniel Hough <dan@danhough.com, @basicallydan>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/upmysport/upmysport-frontend-exercise/issues"
+  },
+  "homepage": "https://github.com/upmysport/upmysport-frontend-exercise",
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "interfake": "~1.9.1",
+    "moment": "~2.8.2"
+  }
+}
