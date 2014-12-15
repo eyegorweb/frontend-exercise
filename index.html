@@ -4,34 +4,73 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>upmysport Frontend Exercise</title>
-	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-responsive.min.css">
 	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.material-design/0.2.0/css/material.min.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.material-design/0.2.0/css/material-wfont.min.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.material-design/0.2.0/css/ripples.min.css">
+
 </head>
 <body>
-	<div class="container">
-		<!-- This should be left empty for backbone + jquery to handle it -->
+</div>
+	<div class="navbar navbar-warning">
+	    <div class="navbar-header">
+	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-warning-collapse">
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="javascript:void(0)">UpMySport</a>
+	    </div>
+	    <div class="navbar-collapse collapse navbar-warning-collapse">
+	        <ul class="nav navbar-nav">
+	            <li class="active"><a href="javascript:void(0)">Active</a></li>
+	            <li><a href="javascript:void(0)">Link</a></li>
+	            <li class="dropdown">
+	                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="javascript:void(0)">Action</a></li>
+	                    <li><a href="javascript:void(0)">Another action</a></li>
+	                    <li><a href="javascript:void(0)">Something else here</a></li>
+	                    <li class="divider"></li>
+	                    <li class="dropdown-header">Dropdown header</li>
+	                    <li><a href="javascript:void(0)">Separated link</a></li>
+	                    <li><a href="javascript:void(0)">One more separated link</a></li>
+	                </ul>
+	            </li>
+	        </ul>
+	        <form class="navbar-form navbar-left">
+	            <input type="text" class="form-control col-lg-8" placeholder="Search">
+	        </form>
+	        <ul class="nav navbar-nav navbar-right">
+	            <li><a href="javascript:void(0)">Link</a></li>
+	            <li class="dropdown">
+	                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="javascript:void(0)">Action</a></li>
+	                    <li><a href="javascript:void(0)">Another action</a></li>
+	                    <li><a href="javascript:void(0)">Something else here</a></li>
+	                    <li class="divider"></li>
+	                    <li><a href="javascript:void(0)">Separated link</a></li>
+	                </ul>
+	            </li>
+	        </ul>
+	    </div>
 	</div>
-
-	<!-- Handlebar Templates -->
-	<script id="bookings-template" type="text/x-handlebars-template">
-		<div class="bookings-list"></div>
-	</script>
-	<script id="bookings-item-template" type="text/x-handlebars-template">
-		<div class="row booking">
-			<h2 class="booking-title">{{title}}</h2>
-			<h3 class="booking-instructor-name">with {{instructor.name}}</h3>
-			<p class="comment-count">{{number_of_comments}} comments</p>
-			<p class="booking-date">Date: {{date}}</p>
+	<div class="container">
+		<div class="row">
+			<h1 class="text-primary">Your lessons</h1>
 		</div>
-	</script>
-
+		<div class="row">
+			<div id="panel-container"></div>
+		</div>
+	</div>
 	<script src="/vendor/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="/vendor/underscore-min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="/vendor/backbone-min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="/vendor/handlebars-v1.3.0.js" type="text/javascript" charset="utf-8"></script>
 	<script src="/js/BookingModel.js" type="text/javascript" charset="utf-8"></script>
 	<script src="/js/BookingListCollection.js" type="text/javascript" charset="utf-8"></script>
-	<script src="/js/index.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/build/index.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

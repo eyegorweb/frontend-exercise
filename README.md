@@ -23,7 +23,7 @@ An exercise to help determine a front-end developer's abilities and expertise. T
   * `POST /api/bookings/<booking_id>/comments`
 * `main.css` is self-explanatory.
 * `package.json` is also self-explanatory. You don't need to touch this either if you don't want to.
-* `spec/` is the directory containing BDD-style tests, with a [Jasmine specrunner](http://jasmine.github.io). It starts with only one. As you go through the tasks, we recommend that you write tests as you go along, ideally using the tests to drive change in some aspects of your code.
+* `spec/` is the directory containing BDD-style tests, with a [Jasmine  ](http://jasmine.github.io). It starts with only one. As you go through the tasks, we recommend that you write tests as you go along, ideally using the tests to drive change in some aspects of your code.
 
 ## Scenario
 

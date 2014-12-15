@@ -1,3 +1,2 @@
-var Booking = Backbone.Model.extend({
-	url: function () { return '/api/bookings/' + this.get('id'); }
-});
+var Booking = Backbone.Model.extend({});
+var Comment = Backbone.Model.extend({});

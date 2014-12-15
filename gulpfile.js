@@ -3,6 +3,23 @@
 var Interfake = require('interfake');
 var gulp = require('gulp');
 var moment = require('moment');
+var browserify = require('gulp-browserify');
+var uglify = require('gulp-uglify');
+var browserifyHandlebars = require('browserify-handlebars');
+
+/*
+ * I've set a 'browserify' gulp task to improve modularity of code and dependency management.
+ * I've seen that moment.js is used on server side, so it's easy to bundle it with browserify for client-side use too
+ * I've added the precompilation for Handlebars templates and the file minification on this gulp task too
+ */
+gulp.task('browserify', function() {
+	gulp.src('./js/index.js')
+	.pipe(browserify({
+		transform: [browserifyHandlebars]
+	}))
+	.pipe(uglify())
+	.pipe(gulp.dest('./build/'));
+});
 
 gulp.task('serve', function(done) {
 	var interfake = new Interfake({ path : '/api', debug: true });
@@ -42,24 +59,8 @@ gulp.task('serve', function(done) {
 		number_of_comments: 1
 	}]);
 
-	interfake.get('/bookings/1').body({
-		id: 1,
-		title: 'Private Tennis Lesson with Andy Murray',
-		date: moment().add(1, 'days'),
-		instructor: {
-			id: 2,
-			name: 'Andy Murray'
-		},
-		attendee: {
-			id: 3,
-			name: 'Jonathan Ross'
-		},
-		location: {
-			lat: 51.531270,
-			lng: -0.156969
-		},
-		number_of_comments: 3,
-		comments: [{
+	interfake.get('/bookings/1').body(
+		[{
 			body: 'Are you ready for the upcoming lesson?',
 			author: {
 				id: 2,
@@ -84,26 +85,10 @@ gulp.task('serve', function(done) {
 			},
 			date: moment().subtract(15, 'hours')
 		}]
-	});
+	);
 
-	interfake.get('/bookings/2').body({
-		id: 2,
-		title: 'Group Boules Lesson with Gregor McGee',
-		date: moment().add(2, 'days'),
-		instructor: {
-			id: 4,
-			name: 'Gregor McGee'
-		},
-		attendee: {
-			id: 3,
-			name: 'Jonathan Ross'
-		},
-		location: {
-			lat: 51.534884,
-			lng: -0.039654
-		},
-		number_of_comments: 1,
-		comments: [{
+	interfake.get('/bookings/2').body(
+		[{
 			body: 'Are you ready for the tutorial, young man?',
 			author: {
 				id: 4,
@@ -112,7 +97,7 @@ gulp.task('serve', function(done) {
 			},
 			date: moment().subtract(4, 'hours')
 		}]
-	});
+	);
 
 	var postCommentsBooking1 = interfake.post('/bookings/1/comments');
 
@@ -163,6 +148,6 @@ gulp.task('serve', function(done) {
 	});
 });
 
-gulp.task('default', ['serve'], function() {
+gulp.task('default', ['browserify', 'serve'], function() {
 
 });
