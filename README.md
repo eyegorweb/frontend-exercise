@@ -80,17 +80,3 @@ The following are bonus tasks which we do not necessarily expect everyone to com
 * `HTML5`: Describe or demonstrate how a cutting-edge HTML5 feature help make the map in **Task 9** easier to reuse in the markup rather than having to involve your JavaScript.
 * `Design / UX`: Go to town on the interface and make it much more user friendly, or get creative with the layout and design.
 * `Performance`: Demonstrate a way to use caching in order to reduce communication between the front end and the "back end" API.
-
-## Hints
-
-In Backbone, events are handled with an `events` attribute on the objects extended from `Backbone.View`, and hooked up to methods on that view. You can look it up on [the Backbone website](http://backbonejs.org/#View-extend).
-
-Keep in mind that the original Bootstrap SASS is available, which means that if you want to use SASS at any point you can, and may include Boostrap in your SASS file. You're welcome to get the LESS instead if you prefer.
-
-You may also like to know to that there are tools out there to bring NodeJS-style `require()` functionality to the front-end, such as [Browserify](http://browserify.org/).
-
-The template engine being used is Handlebars. You're welcome to switch to a different one, but if you don't, here's a handlebars tip: to add new tags to use in your templates, use a [Helper](http://handlebarsjs.com/expressions.html#helpers).
-
-Use Chrome Developer Tools, Firebug or F12 Developer Tools to inspect the responses from the mocked API when introducing new functionality, or read through the Gulpfile to figure out what information will be provided by the endpoint.
-
-If you have any questions, please email neill@upmysport.com. Remember, no task has a single approach. Exercise your Google-fu and come up with creative solutions if you need to!
