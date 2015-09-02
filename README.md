@@ -2,6 +2,29 @@ Project followed on 09/02/2015
 Author: Igor Trifunovic
 mail: igor.tri@orange.fr
 
+PROCESS TO UPDATE LOCALLY:
+
+git clone https://github.com/eyegorweb/frontend-exercise.git
+git add README.md
+git commit -am "init commit"
+git pull https://github.com/eyegorweb/frontend-exercise.git master
+git push https://github.com/eyegorweb/frontend-exercise.git master
+npm install gulp --save-dev
+sudo npm install gulp --save-dev
+sudo npm install -g gulp
+sudo npm install --save-dev gulp
+sudo npm install interfake --save
+sudo npm install moment --save
+sudo npm install gulp-browserify
+sudo npm install --save-dev gulp-browserify
+sudo npm install --save-dev gulp-uglify
+sudo npm install browserify-handlebars
+browserify -t browserify-handlebars entry-point.js
+sudo npm install --save-dev handlebars
+sudo npm install --save-dev browserify-handlebars
+sudo npm install --save-dev hbsfy
+sudo npm install --save-dev handlebars@1
+
 upmysport Front-End Developer Exercise
 ======================================
 
@@ -11,7 +34,7 @@ An exercise to help determine a front-end developer's abilities and expertise. T
 
 1. Fork the repo
 2. Clone it
-3. If you don't have it already, install gulp globally using `npm install gulp -g`
+3. If you don't have it already, install gulp globally using `sudo npm install gulp -g`
 4. Do `npm install` in the directory
 5. Run `gulp` in the directory
 6. Go to http://localhost:3000

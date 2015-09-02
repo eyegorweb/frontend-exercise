@@ -131,7 +131,7 @@ gulp.task('serve', function(done) {
 	postCommentsBooking2.extends.get('/bookings/1').body({
 		number_of_comments: 2,
 		comments : [{
-			body: 'I sure am!',
+			body: 'Yes, sure I am!',
 			author: {
 				id: 3,
 				name: 'Jonathan Ross',
