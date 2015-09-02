@@ -2,8 +2,17 @@ Project followed on 09/02/2015
 Author: Igor Trifunovic
 mail: igor.tri@orange.fr
 
-PROCESS TO UPDATE LOCALLY:
+upmysport Front-End Developer Exercise
+======================================
 
+An exercise to help determine a front-end developer's abilities and expertise. There are many ways to complete it, so do it however you feel best. However, it does involve use of some third-party frameworks: Backbone (MV* framework), Underscore (dependency of Backbone), Handlebars (templates) and Bootstrap (CSS). You are not required to use them, and you are more than welcome to completely switch frameworks or ditch them entirely as long as you can complete the tasks.
+
+## Get Started
+
+1. Fork the repo
+2. Clone it
+3. If you don't have it already, install gulp globally using `sudo npm install gulp -g`
+4. Do `npm install` in the directory (PROCESS TO UPDATE LOCALLY:
 git clone https://github.com/eyegorweb/frontend-exercise.git
 git add README.md
 git commit -am "init commit"
@@ -24,18 +33,7 @@ sudo npm install --save-dev handlebars
 sudo npm install --save-dev browserify-handlebars
 sudo npm install --save-dev hbsfy
 sudo npm install --save-dev handlebars@1
-
-upmysport Front-End Developer Exercise
-======================================
-
-An exercise to help determine a front-end developer's abilities and expertise. There are many ways to complete it, so do it however you feel best. However, it does involve use of some third-party frameworks: Backbone (MV* framework), Underscore (dependency of Backbone), Handlebars (templates) and Bootstrap (CSS). You are not required to use them, and you are more than welcome to completely switch frameworks or ditch them entirely as long as you can complete the tasks.
-
-## Get Started
-
-1. Fork the repo
-2. Clone it
-3. If you don't have it already, install gulp globally using `sudo npm install gulp -g`
-4. Do `npm install` in the directory
+)
 5. Run `gulp` in the directory
 6. Go to http://localhost:3000
 
