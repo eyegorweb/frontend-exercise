@@ -1,3 +1,7 @@
+Project followed on 09/02/2015
+Author: Igor Trifunovic
+mail: igor.tri@orange.fr
+
 upmysport Front-End Developer Exercise
 ======================================
 
